@@ -7,7 +7,7 @@ class YaUploader:
 
     def __init__(self): # Определяем переменные функции
         self.url = 'https://cloud-api.yandex.net:443/v1/disk/resources/upload' # URL на заливку файла
-        self.token = 'y0_AgAAAABkk8QRAADLWwAAAADO3RBMg-EGtKtrQyu0lhQ8Ueo2wUeaEG4' # Сюда токен пользователя (сейчас стоит твой)
+        self.token = 'y0_AgAAAABkk8QRAADLWwAAAADO3RBMg-EGtKtrQyu0lhQ8Ueo2wUeaEG4' 
         self.headers = {'Content-Type': 'application/json', 'Authorization': f'OAuth {self.token}'} # Параметры запроса на авторизацию
 
     def upload(self, file_path:str): # Определяем переменные загрузки файла
